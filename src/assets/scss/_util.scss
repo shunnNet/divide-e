@@ -1,0 +1,191 @@
+@import "env";
+@import "btn-theme";
+@import "tag";
+
+.box-full {
+  @extend %layoutBoxBase;
+  max-width: $container-width-full;
+}
+
+.box-lg {
+  @extend %layoutBoxBase;
+  max-width: $container-width-lg;
+}
+.box-md {
+  @extend %layoutBoxBase;
+  max-width: $container-width-md;
+}
+
+.h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.h3 {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+.fz-rem100 {
+  font-size: 1rem;
+}
+.fz-rem120 {
+  font-size: 1.2rem;
+}
+.fz-120 {
+  font-size: 1.2em;
+}
+
+.fs-italic {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.color-sub {
+  color: $sub;
+}
+.color-main {
+  color: $main;
+}
+.color--hover-main {
+  &:hover {
+    color: $main;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+.f-col {
+  flex-direction: column;
+}
+
+.f-main-end {
+  justify-content: flex-end;
+}
+.f-main-center {
+  justify-content: center;
+}
+.f-main-between {
+  justify-content: space-between;
+}
+
+.f-cross-center {
+  align-items: center;
+}
+.f-all-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.f-self-cross-start {
+  align-self: flex-start;
+}
+
+.flex-1 {
+  flex: 1 1 1px;
+  // ie11 will not stretch when row, and basis is 0;
+}
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.w-full {
+  width: 100%;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.mr-10 {
+  margin-right: 5px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mr-025 {
+  margin-right: 0.25em;
+}
+.mr-050 {
+  margin-right: 0.5em;
+}
+.mb-050 {
+  margin-bottom: 0.5em;
+}
+.mb-100 {
+  margin-bottom: 1em;
+}
+
+.ml-050 {
+  margin-left: 0.5em;
+}
+
+.pd-050 {
+  padding: 0.5em;
+}
+
+.pt-950 {
+  padding-top: 9.5em;
+}
+
+.float-r {
+  float: right;
+}
+
+.z-3 {
+  z-index: 9997;
+}
+.z-4 {
+  z-index: 9996;
+}
+
+.editableInput {
+  @extend %no-pointer-touch-device;
+  cursor: pointer;
+  transition: 0.1s;
+  padding: 0;
+  background-color: transparent;
+  padding-left: 10px;
+  &:hover {
+    box-shadow: 3px 3px 10px -3px dimgrey;
+  }
+  &:focus {
+    padding: 0.25em 0 0.25em 0.25em;
+    box-shadow: none;
+    cursor: text;
+    background: transparent;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+  }
+}
+
+@include pad {
+  .d-none-pad {
+    display: none;
+  }
+  .d-block-pad {
+    display: block;
+  }
+  .w-full-pad {
+    width: 100%;
+  }
+  .mb-050-pad {
+    margin-bottom: 0.5em;
+  }
+  .d-block-pad {
+    display: block;
+  }
+}
