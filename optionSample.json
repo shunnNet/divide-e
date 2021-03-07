@@ -1,0 +1,16 @@
+{
+  "1612697375118": {
+    "filename": "佐佐鮮[當天日期]",
+    "fields": [],
+    "id": "1612697375118",
+    "filterGroup": [
+      [
+        {
+          "field": "Products Tradename",
+          "funcName": "includes",
+          "value": "佐佐"
+        }
+      ]
+    ]
+  }
+}
